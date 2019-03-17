@@ -42,3 +42,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+`enable SSL/TLS in oldcoffees.me`
+
+Created SSL/TLS certificates with Let's encrypt certbot client. It is free.
+
+Instructions:
+
+1. Generate the certs file: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-an-instance.html#letsencrypt
+
+2. Add the generated cert file and Key file to /etc/httpd/conf.d/ssl.conf file
+
+3. Open the 443 inbound port from ec2 console.
+
